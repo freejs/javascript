@@ -17,7 +17,7 @@ li.pop();
 li.sort();
 li.reverse();
 ```
-- `shift`ㅡ 맨 첫번째 element 제거.
-- `pop`ㅡ 맨 끝 element 제거.
-- `sort`ㅡ element들 정렬.
-- `reverse`ㅡ element 역순으로 정렬.
+- `shift`ㅡ 맨 첫번째 element 제거.  
+- `pop`ㅡ 맨 끝 element 제거.  
+- `sort`ㅡ element들 정렬.  
+- `reverse`ㅡ element 역순으로 정렬.  
