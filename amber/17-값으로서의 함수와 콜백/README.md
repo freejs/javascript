@@ -30,5 +30,10 @@ b 를 속성이라고 한다. 이 속성의 값은 함수. 이 함수를 method 
 변수, 매개변수, 리턴값으로도 쓰이는 것을 first-class citizen/object 라고 한다.  
 
 ## 콜백
+
 어떠한 함수가 수신하는 인자가 함수인 경우를 콜백이라고 한다.  
 콜백이 가능한 것 또한 Javascript의 함수가 값이기 때문이다.  
+
+
+#### 비동기 처리
+**Ajaxㅡ** Asynchronous(비동기) Javascript and XML  
