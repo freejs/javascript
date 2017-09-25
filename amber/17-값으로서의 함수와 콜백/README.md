@@ -2,19 +2,19 @@
 
 함수가 일종의 값이라는 것은 함수 역시도 변수에 담을 수 있다는 것이다. 즉, 함수 자체가 값이 될 수 있다는 것이다. 또한 함수는 인자(parameter)도 될 수 있다.  
 
-```
+```javascript
 function a(){}
 ```
 
 a 라는 변수에 담겨진 함수.
 
-```
+```javascript
 var a = function(){}
 ```
 
 와 같다.
 
-```
+```javascript
 a = {
   b : function(){  
   }
