@@ -5,9 +5,11 @@ JS구현을 위한 준비물 : 웹브라우저, 코드 작성 에디터(만능 �
 크롬창 → 도구 → 개발자 도구 (F12 키)  
 
 or
-```
+
+```javascript
 console.log('Hello world');
 ```
+
 <br>
 IDE : 통합개발도구 : 거의 만능 도구  
 
