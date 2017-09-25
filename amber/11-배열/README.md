@@ -1,7 +1,7 @@
 ## 배열
 배열 : 연관되어 있는 데이터들을 담아내기 위한 그릇.  
 
-```
+```javascript
 var li = ['a', 'b', 'c', 'd', 'e'];
 li.push('f');
 li = li.concat(['f', 'g']);
@@ -15,7 +15,7 @@ li.splice(2, 0, 'B');
 
 <br>
 
-```
+```javascript
 li.shift();
 li.pop();
 li.sort();
