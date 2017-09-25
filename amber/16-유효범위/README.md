@@ -13,7 +13,7 @@
 #### 익명함수
 전역 변수를 아예 사용하고 싶지 않을 때.  
 
-```
+```javascript
 (function(){
     var MYAPP = {}
     MYAPP.calculator = {
@@ -37,7 +37,7 @@
 
 사용될 때가 아닌 정의될 때의 전역변수가 사용된다.
 
-```
+```Javascript
 var i = 5;
 
 function a(){
@@ -54,6 +54,6 @@ a();
 
 결과
 
-```
+```javascript
 5
 ```
