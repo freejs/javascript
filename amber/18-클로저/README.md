@@ -9,13 +9,13 @@
 #### 외부함수
 함수를 포함하고 있는 함수. 함수를 감싸고 있는 함수.  
 
-```
+```javascript
 function inner(){
 
 }
 ```
 
-```
+```javascript
 var inner = function(){
 
 }
