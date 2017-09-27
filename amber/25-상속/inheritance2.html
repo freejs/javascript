@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript">
+  function Person(name){
+    this.name = name;
+  }
+  Person.prototype.name=null;
+  Person.prototype.introduce = function(){
+    return 'My name is '+this.name;
+  }
+
+  function Programmer(name){
+    this.name = name;
+  }
+  
+  /*
+  Programmer가 introduce 를 상속한다. 어떻게?
+  Programmer라는 생성자가 갖고 있는 property 중 prototype이라는 특수한 property의 값으로 new person()을 한 것이다.
+  new Person()을 함으로써 어떠한 객체가 생성되는데 그 객체를 생성할 때 prototype이라는 속성을 생성자 함수가 갖고 있는지를 확인한다.
+  그리고 그 생성자 함수 안에 들어있는 객체와 똑같은 객체를 만들어서 생성자의 결과로 return 을 해준다.
+  name이라는 property 와 introduce라는 메소드를 갖고있는 객체가 prototype 안에 들어가 있기 때문에 new person()을 통해 만든 객체는
+  이들을 갖고있는 객체가 된다.
+  */
+  Programmer.prototype = new Person();
+
+  /*
+  이 상태에서 new programmer를 해서 생성자를 객체화 시키고 있다.
+  JS 는 programmer 라는 생성자 함수가 갖고있는 prototype라고 하는 property 값과 동일한 구조를 갖고 있는 동일한 객체를 만들어서
+  그 결과를 return 해준 것이 p1이 된다.
+  */
+  var p1 = new Programmer('egoing');
+
+  //결국 p1에서 introduce()를 호출할 수 있는 것.
+  document.write(p1.introduce()+"<br />");
+  </script>
+</body>
+</html>
