@@ -1,32 +1,32 @@
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <script type="text/javascript">
-    function person(name){
-      this.name=name;
-      this.introduce=function(){
-        return 'i am '+this.name;
-      }
+<head>
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript">
+  function person(name){
+    this.name=name;
+    this.introduce=function(){
+      return 'i am '+this.name;
     }
-    var p1=new person('westbro');
-    document.write(p1.introduce()+"<br>");
+  }
+  var p1=new person('westbro');
+  document.write(p1.introduce()+"<br>");
+  
+  //상속
+  function person(name){
+    this.name=name;
+  }
+  //person이라는 생성자에는 prototype이라는 property가 있는데 그 안에는 어떠한 객체가 들어가 있다.
+  //그리고 그 객체.name 을 함으로써 값을 줄 수 있다.
+  //그리고 객체.introduce 를 함으로써 함수를 할당할 수 있고 그 객체안에 메소드를 정의할 수 있다.
+  person.prototype.name=null;
+  person.prototype.introduce=function(){
+    return 'i am '+this. name;
+  }
+  var p1=new person('westbro');
+  document.write(p1.introduce()+"<br>");
 
-    //상속
-    function person(name){
-      this.name=name;
-    }
-    //person이라는 생성자에는 prototype이라는 property가 있는데 그 안에는 어떠한 객체가 들어가 있다.
-    //그리고 그 객체.name 을 함으로써 값을 줄 수 있다.
-    //그리고 객체.introduce 를 함으로써 함수를 할당할 수 있고 그 객체안에 메소드를 정의할 수 있다.
-    person.prototype.name=null;
-    person.prototype.introduce=function(){
-      return 'i am '+this. name;
-    }
-    var p1=new person('westbro');
-    document.write(p1.introduce()+"<br>");
-
-    </script>
-  </body>
+  </script>
+</body>
 </html>
