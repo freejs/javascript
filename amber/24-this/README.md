@@ -69,9 +69,8 @@ if(funcThis===o2){
 생성자로 사용될 때에는 this 의 값이 생성될 객체를 가리킨다.  
 함수로 호출될 때에는 함수안에서 this 의 값은 window 를 가리킨다.  
 
+
 #### apply를 이용해 함수를 호출 할 때의 this
-
-
 
 ```javascript
 var o = {}
