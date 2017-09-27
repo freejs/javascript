@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>
+  </title>
+</head>
+<body>
+  <script type="text/javascript">
+  function ultra(){}
+  ultra.prototype.ultraProp=true;
+
+  function super(){}
+  super.prototype=new ultra();
+
+  function sub(){}
+  var s=new super();
+  s.ultraProp=3;
+  sub.prototype=s;
+
+  var o=new sub();
+
+  /*
+  객체 o에서 ultraProp를 찾는다.
+  없다면 Sub.prototype.ultraProp를 찾는다.
+  없다면 Super.prototype.ultraProp를 찾는다.
+  없다면 Ultra.prototype.ultraProp를 찾는다.
+  */
+  console.log(o.ultraProp);
+
+  </script>
+</body>
+</html>
