@@ -1,4 +1,4 @@
-# 26 - 표준 내장 객체의 확장
+# 27 - 표준 내장 객체의 확장
 
 <https://opentutorials.org/course/743/6475>
 
