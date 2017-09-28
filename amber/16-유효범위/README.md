@@ -10,6 +10,8 @@
 
 브래드피트 너무 멋있따.  
 
+<br>
+
 #### 익명함수
 전역 변수를 아예 사용하고 싶지 않을 때.  
 
@@ -32,6 +34,9 @@
     document.write(sum());
 }())
 ```
+
+
+<br>
 
 ### 정적 유효범위(static scoping, lexical scoping)
 
