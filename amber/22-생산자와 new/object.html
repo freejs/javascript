@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript">
+  var person={}
+  person.name='westbro';
+  person.introduce=function(){
+    return 'I am '+ this.name;
+  }
+  document.write(person.introduce()+"<br>");
+
+  var person2={
+    'name' : 'westbrooo',
+    'introduce' : function(){
+      return 'I am '+ this.name;
+    }
+  }
+
+  //위 코드를 이렇게 간단하게 바꿀 수 있다.
+  //생성자는 객체에 대한 초기화(initialize)를 한다.
+  function person3(name){
+    this.name=name;
+    this.introduce=function(){
+      return 'I am '+ this.name;
+    }
+  }
+  var p = new person3('westbro');
+  docuemnt.write(p.introduce()+"<br>");
+
+  var p2 = new person3('westbro');
+  docuemnt.write(p2.introduce()+"<br>");
+
+  </script>
+</body>
+</html>
