@@ -1,6 +1,7 @@
 
 <p align='center'>
-![logo](./assets/images/freejs_logo.jpg)  
+<img src="/assets/images/freejs_logo.jpg"/>
+<br>
 <br>
 TEAM FREEJS
 </p>
